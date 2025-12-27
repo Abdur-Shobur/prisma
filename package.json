@@ -1,28 +1,28 @@
 {
-  "name": "prisma",
-  "version": "1.0.0",
-  "description": "| Level  | Topic                  | What you learn                      |\r | ------ | ---------------------- | ----------------------------------- |\r | Day 1  | Intro, Installation    | Prisma কী, কেন ব্যবহার করবেন, সেটআপ |\r | Day 2  | Prisma Schema          | Model, Field, Relations             |\r | Day 3  | Migration              | DB create/update, migrate, reset    |\r | Day 4  | CRUD Operations        | Create, Read, Update, Delete        |\r | Day 5  | Filtering & Pagination | where, orderBy, skip/take           |\r | Day 6  | Relations Deep         | 1-1, 1-Many, Many-Many              |\r | Day 7  | Prisma + Express/Nest  | API বানানো                          |\r | Day 8  | Prisma Client Advance  | `$transaction`, `$queryRaw`, seed   |\r | Day 9  | Prisma Middleware      | লগিং, soft delete                   |\r | Day 10 | Deploy & Production    | PlanetScale / Neon / Render deploy  |",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Abdur-Shobur/prisma.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Abdur-Shobur/prisma/issues"
-  },
-  "homepage": "https://github.com/Abdur-Shobur/prisma#readme",
-  "dependencies": {
-    "@prisma/client": "^7.2.0",
-    "prisma": "^7.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^25.0.3"
-  }
+	"name": "prisma",
+	"version": "1.0.0",
+	"description": "| Level  | Topic                  | What you learn                      |\r | ------ | ---------------------- | ----------------------------------- |\r | Day 1  | Intro, Installation    | Prisma কী, কেন ব্যবহার করবেন, সেটআপ |\r | Day 2  | Prisma Schema          | Model, Field, Relations             |\r | Day 3  | Migration              | DB create/update, migrate, reset    |\r | Day 4  | CRUD Operations        | Create, Read, Update, Delete        |\r | Day 5  | Filtering & Pagination | where, orderBy, skip/take           |\r | Day 6  | Relations Deep         | 1-1, 1-Many, Many-Many              |\r | Day 7  | Prisma + Express/Nest  | API বানানো                          |\r | Day 8  | Prisma Client Advance  | `$transaction`, `$queryRaw`, seed   |\r | Day 9  | Prisma Middleware      | লগিং, soft delete                   |\r | Day 10 | Deploy & Production    | PlanetScale / Neon / Render deploy  |",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Abdur-Shobur/prisma.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Abdur-Shobur/prisma/issues"
+	},
+	"homepage": "https://github.com/Abdur-Shobur/prisma#readme",
+	"dependencies": {
+		"@prisma/client": "^7.2.0",
+		"prisma": "^7.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "^25.0.3"
+	}
 }
