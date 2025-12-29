@@ -1,0 +1,27 @@
+{
+	"name": "03-prisma-express",
+	"version": "1.0.0",
+	"description": "আজ আমরা User CRUD API বানাবো। Browser / Postman / Thunder Client দিয়ে টেস্ট করতে পারবেন।\r Day-3 শেষ হলে আপনি Prisma-backed API বানাতে পারবেন — Next.js / React / Flutter যেখানেই চাই ব্যবহার করতে পারবেন।",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"devDependencies": {
+		"@types/express": "^5.0.6",
+		"@types/node": "^25.0.3",
+		"@types/pg": "^8.16.0",
+		"prisma": "^7.2.0",
+		"tsx": "^4.21.0",
+		"typescript": "^5.9.3"
+	},
+	"dependencies": {
+		"@prisma/adapter-pg": "^7.2.0",
+		"@prisma/client": "^7.2.0",
+		"dotenv": "^17.2.3",
+		"pg": "^8.16.3"
+	}
+}
