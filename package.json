@@ -20,6 +20,7 @@
 	"homepage": "https://github.com/Abdur-Shobur/prisma#readme",
 	"dependencies": {
 		"@prisma/client": "^7.2.0",
+		"express": "^5.2.1",
 		"prisma": "^7.2.0"
 	},
 	"devDependencies": {

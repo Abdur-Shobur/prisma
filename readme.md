@@ -12,3 +12,7 @@
 | Day 8  | Prisma Client Advance  | `$transaction`, `$queryRaw`, seed   |
 | Day 9  | Prisma Middleware      | লগিং, soft delete                   |
 | Day 10 | Deploy & Production    | PlanetScale / Neon / Render deploy  |
+
+npm i prisma @prisma/client
+
+npx tsx server.ts
