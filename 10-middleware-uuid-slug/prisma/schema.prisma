@@ -1,0 +1,47 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id        Int     @id @default(autoincrement())
+  email     String  @unique
+  uuid      String @default(uuid()) @unique
+  name      String?
+  password  String  @default("")
+  isDeleted Boolean @default(false)
+  posts     Post[]
+}
+
+model Category {
+  id    Int            @id @default(autoincrement())
+  name  String
+  posts PostCategory[]
+}
+
+model PostCategory {
+  postId     Int
+  categoryId Int
+  post       Post     @relation(fields: [postId], references: [id])
+  category   Category @relation(fields: [categoryId], references: [id])
+
+  @@id([postId, categoryId]) // composite primary key
+}
+
+// একজন User-এর অনেকগুলো Post থাকতে পারে → One-to-Many
+
+model Post {
+  id         Int            @id @default(autoincrement())
+  title      String
+  content    String?
+  published  Boolean        @default(false)
+  author     User           @relation(fields: [authorId], references: [id])
+  categories PostCategory[]
+  authorId   Int
+  likes      Int            @default(0)
+  views      Int            @default(0)
+}
